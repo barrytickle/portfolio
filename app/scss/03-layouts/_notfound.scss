@@ -1,0 +1,77 @@
+.section-error {
+	padding: 0;
+	height: 100vh;
+	width: 100%;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
+	overflow: hidden;
+	.hero {
+		width:80%;
+		@include display(flex);
+		@include justify-content(center);
+		@include align-items(center);
+		@include flex-direction(column);
+		@media #{$tablet} {
+			@include flex-direction(row);
+			width:50%;
+		}
+		.error--message {
+			width:100%;
+			@media #{$tablet}{
+				width: 50%;
+				@include align-self(flex-end);
+				padding-top:100px;
+			}
+
+			@media #{$laptop}{
+				width:40%;
+			}
+
+			@media #{$largeDesktop}{
+				width:25%;
+			}
+		}
+		h1 {
+			color: $primaryColor;
+      @include align-self(flex-start);
+			position: relative;
+			@media #{$tablet}{
+				width:50%;
+				margin-right:50px;
+			}
+
+			@media #{$laptop}{
+				margin-right:0;
+				width:30%;
+			}
+
+			@media #{$largeDesktop}{
+				width:25%;
+			}
+
+			line-height:1em;
+			&:after{
+				display: none;
+				@media #{$tablet} {
+					content: '';
+					display: block;
+					position: absolute;
+					height: 350px;
+					width: 1px;
+					background: $grey;
+					@include transform(rotate(-133deg));
+					margin-right: 35%;
+	        @include align-self(flex-start);
+					top:-50%;
+					right:-20%;
+
+					@media #{$laptop}{
+						right:0%;
+					}
+
+				}
+			}
+		}
+	}
+}

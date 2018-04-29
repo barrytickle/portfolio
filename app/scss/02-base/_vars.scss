@@ -1,0 +1,40 @@
+/* --- Colours --- */
+
+$primaryColor: #ff2d55;
+$secondaryColor: #6C1CD4;
+$tertiaryColor: #BADA55;
+
+$white: #fff;
+$black: #555;
+$grey: #eee;
+$lightGrey: lighten($grey, 5%);
+
+/* --- Colours --- */
+
+$shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+
+/* --------------------------------*/
+
+/* --- Fonts --- */
+
+$primaryFont: 'Sentinel';
+$secondaryFont: 'Roboto';
+
+/* --- Fonts --- */
+
+/* --------------------------------*/
+
+
+/* --- Media Querys --- */
+
+$largeMobile: "(min-width: 425px)";
+$small-tablet: "(min-width: 600px)";
+$tablet: "(min-width: 768px)";
+$laptop: "(min-width: 1024px)";
+$desktop: "(min-width: 1280px)";
+$largeDesktop: "(min-width:1680px)";
+
+// example: @media #{$small-tablet} { }
+
+/* --- Media Querys --- */

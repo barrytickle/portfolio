@@ -1,0 +1,56 @@
+.btn{
+  padding:10px 20px;
+  box-shadow: $shadow;
+  font-family:$secondaryFont;
+  margin-top:20px;
+  display:table;
+  border:2px solid;
+  border-radius: 25px;
+
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+@mixin btn-dark(){
+  border-color:#d3dae9;
+  color:#8fa1c7;
+}
+
+@mixin btn-light(){
+  border-color:#fff;
+  background:transparent;
+  color:#fff;
+}
+
+.btn-dark{
+  @include btn-dark();
+  &:hover{
+    background:darken(#ff2d55, 10%);
+    border-color: transparent;
+    color:$white;
+  }
+}
+
+.btn-light{
+  @include btn-light();
+  &:hover{
+    background:$white;
+    color:$primaryColor !important;
+  }
+}
+
+.btn-group{
+  @include display(flex);
+  @include flex-direction(column);
+
+  @media #{$tablet}{
+    @include flex-direction(row);
+  }
+  .btn{
+    margin-bottom:30px;
+    @media #{$tablet}{
+      margin-bottom:0;
+      margin-right:20px;
+    }
+  }
+}

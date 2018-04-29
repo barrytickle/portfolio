@@ -1,0 +1,75 @@
+form{
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  @include flex-wrap(wrap);
+  input[type="text"], input[type="email"], textarea{
+    background:#f5f5fa;
+    color:$black;
+    font-family:$secondaryFont;
+    padding:20px;
+    border:0;
+    box-shadow: $shadow;
+    margin-bottom:20px;
+    margin-top:10px;
+    font-size:1em;
+
+
+    &.parsley-error {
+        background: #f5d3dd;
+        color: #b94a48;
+    }
+
+    &.parsley-success {
+        background: #dff0d8;
+        color: #468847;
+    }
+
+  }
+
+  .file-upload{
+    width:50%;
+    margin-top:10px;
+    margin-bottom:20px;
+    .file-select{
+      height:70px;
+      .file-select-button, .file-select-name{
+        height:70px;
+        line-height:70px;
+      }
+    }
+  }
+
+  input[type="text"], input[type="email"]{
+    width:48%;
+  }
+  textarea{
+    height:250px;
+    width:100%;
+  }
+
+  input[type="submit"]{
+    background-color:$primaryColor;
+    color:$white;
+    font-family:$secondaryFont;
+    font-size:1em;
+    color:$white;
+    border:0;
+    padding:20px;
+
+    box-shadow: $shadow;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight:100;
+    &:hover{
+      background:darken($primaryColor, 10%);
+    }
+  }
+}
+
+
+/* Parsley */
+
+.parsley-errors-list{
+  display:none;
+}

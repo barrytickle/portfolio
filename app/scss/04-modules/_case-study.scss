@@ -1,0 +1,42 @@
+.case--study_list{
+  margin-top:120px;
+  .case--study{
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex-direction(column);
+    margin-bottom:60px;
+    @media #{$laptop}{
+      @include flex-direction(row);
+    }
+
+    .image-block{
+      width:100%;
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height:300px;
+      @media #{$laptop}{
+        width:40%;
+      }
+    }
+    .content-block{
+      width:80%;
+      margin-top:30px;
+      @media #{$laptop}{
+        width:55%;
+        margin-top:0;
+      }
+
+      .btn-group{
+        @include display(flex);
+        @include justify-content(flex-start);
+
+        a{
+          margin-right:10px;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,137 @@
+.case--study_bar{
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+  background:$primaryColor;
+  color:$white;
+  height:60px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+  @media #{$tablet}{
+    width:calc(100% - 100px);
+    padding:0 30px;
+    top:0;
+    right:0;
+    left:auto;
+
+    div{
+      width:30%;
+
+      a{
+        color:$white;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .prev--study{
+      text-align: left;
+    }
+
+    .website--visit{
+      text-align: center;
+    }
+
+    .next--study{
+      text-align: right;
+    }
+
+  }
+}
+.case--study_block{
+  padding:120px 0;
+  @media #{$laptop}{
+    padding:0;
+  }
+  h1{
+    font-size:3em;
+  }
+
+  .container-lrg{
+    margin:120px auto;
+    max-width:90%;
+    @media #{$desktop}{
+      max-width:80%;
+    }
+    &:first-child{
+      margin:0 auto;
+    }
+  }
+
+  .container-sml{
+    margin:60px auto;
+
+    p{
+      width:80%;
+      margin:30px auto;
+    }
+
+    img{
+      max-width:100%;
+    }
+  }
+  span{
+    font-size:2em;
+    color:rgba($black, 0.3);
+  }
+
+  .large--banner{
+    height:110vh;
+    width:100%;
+    margin:60px 0;
+    background-size:cover;
+    background-position: center;
+  }
+
+  .section--right{
+    @include display(flex);
+    @include justify-content(flex-end);
+  }
+
+  .border--bottom{
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .clear--text{
+    width:100%;
+    @media #{$largeDesktop}{
+      width:40%;
+    }
+
+    h2, span{
+      font-size:32px;
+      @media #{$desktop}{
+        font-size:42px;
+
+      }
+    }
+    h2{
+      font-weight: 300;
+      span{
+        display:block;
+        width:70%;
+      }
+    }
+    p{
+      width:100%;
+      @media #{$laptop}{
+        width:70%;
+      }
+    }
+
+    .colour-block{
+      @include display(flex);
+      div{
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        margin-right:10px;
+        background:$primaryColor;
+      }
+    }
+  }
+}

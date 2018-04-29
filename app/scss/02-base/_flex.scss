@@ -1,0 +1,14 @@
+.flex--split{
+  @include display(flex);
+  @include flex-direction(column);
+  >*{
+    margin-bottom:30px;
+  }
+  @media #{$tablet}{
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    >*{
+      margin-bottom:0;
+    }
+  }
+}

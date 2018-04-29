@@ -1,0 +1,26 @@
+.content--container{
+  padding:120px 0;
+  .center-intro{
+    h1{
+      color:$black;
+      font-family:$primaryFont;
+      text-align: center;
+      font-size:3em;
+      margin-bottom:30px;
+      @media #{$tablet}{
+        width:60%;
+        text-align: left;
+        margin:0 auto;
+      }
+    }
+
+    p{
+      width:80%;
+      margin:0 auto;
+      @media #{$tablet}{
+        width:60%;
+      }
+    }
+  }
+
+}

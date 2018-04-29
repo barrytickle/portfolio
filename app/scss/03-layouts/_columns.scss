@@ -1,0 +1,60 @@
+.column--group{
+  @include display(flex);
+  @include justify-content(space-between);
+  @include align-items(center);
+  @include flex-direction(column);
+
+  @media #{$desktop}{
+    margin-bottom:60px;
+    @include flex-direction(row);
+
+  }
+
+  .column{
+    min-height:50vh;
+    width:100%;
+    @media #{$desktop}{
+      height:100vh;
+      width:47vw;
+    }
+    &:first-child{
+      padding-left:5%;
+      @include display(flex);
+      @include flex-direction(column);
+      @include justify-content(center);
+      @media #{$laptop}{
+        padding-left:10%;
+      }
+    }
+  }
+
+  p{
+    width:100%;
+    @media #{$laptop}{
+      width:70%;
+    }
+    @media #{$desktop}{
+      width:80%;
+    }
+  }
+
+  &.reverse{
+    @include flex-direction(column);
+    @media #{$desktop}{
+      @include flex-direction(row-reverse);
+    }
+
+    .column{
+      &:first-child{
+        padding-left:0;
+        @media #{$laptop}{
+          padding-right:10%;
+        }
+      }
+      &:last-child{
+        padding-right:5%;
+
+      }
+    }
+  }
+}

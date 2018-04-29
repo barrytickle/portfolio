@@ -1,0 +1,23 @@
+main{
+  @media #{$tablet}{
+    width:calc(100% - 100px);
+    float:right;
+  }
+
+  .img-block{
+    height:250px;
+    margin-top:30px;
+    width:800px;
+    max-width:100%;
+    background-size:cover;
+    background-position: center;
+    @media #{$laptop}{
+      height:550px;
+    }
+    @media #{$desktop}{
+      margin-top:0;
+      height:100%;
+
+    }
+  }
+}
