@@ -1,14 +1,7 @@
 <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/header.php' ?>
   <div class="case--study_bar">
-    <div class="prev--study">
-      Previous: CookMySite
-    </div>
-    <div class="website--visit">
-      <a href="http://oakleyandfriends.co.uk">Visit Website</a>
-    </div>
-    <div class="next--study">
-      Next: Loopsy
-    </div>
+    <?php $website = "http://oakleyandfriends.co.uk"; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/includes/case-study.php'; ?>
   </div>
   <section class="case--study_block">
     <div class="container-lrg">

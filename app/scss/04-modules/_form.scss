@@ -1,3 +1,5 @@
+/* Defines the styling for the contact form, on the contact page. Will control how the errors will look and how success will look */
+
 form{
   @include display(flex);
   @include flex-direction(row);

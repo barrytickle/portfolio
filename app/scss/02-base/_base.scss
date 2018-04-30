@@ -1,5 +1,6 @@
 @import "vars";
 
+/* Reset's all the values before any css loads */
 *{
   box-sizing: border-box;
   margin:0;
@@ -7,6 +8,8 @@
   text-rendering: optimizeLegibility;
 }
 
+
+/* Sets the styling for the main body, sets all font to primary font */
 body,html{
   margin: 0;
   font-family: $primaryFont;
@@ -17,6 +20,7 @@ body,html{
   }
 }
 
+/* Class used alongside the hamburger menu, will attach itself to the body upon load. Prevents scrolling when the navigation menu has been opened */
 .no-move{
   height:100vh;
   overflow:hidden;
@@ -24,7 +28,7 @@ body,html{
   top:0;
   left:0;
 }
-
+/* Default container for the site */
 .container{
   @media #{$laptop}{
     max-width:900px;

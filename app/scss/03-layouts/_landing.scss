@@ -55,7 +55,7 @@
 
 
 
-
+/* Portfolio section within the site, will control the styling to align all of the portfolio items accordingly */
 .section-portfolio{
   @include display(flex);
   @include justify-content(flex-end);

@@ -1,3 +1,5 @@
+
+/* Default styling for all buttons, all buttons will contain the same padding and shape */
 .btn{
   padding:10px 20px;
   box-shadow: $shadow;
@@ -11,6 +13,9 @@
   transition: 0.2s ease-in-out;
 }
 
+/*
+  Mixins are created to share classes publicly across all CSS. button dark and button light will be used as the two main buttons throughout all the portfolio */
+*/
 @mixin btn-dark(){
   border-color:#d3dae9;
   color:#8fa1c7;
@@ -22,6 +27,8 @@
   color:#fff;
 }
 
+
+/* Button dark will be for colour buttons present on white backgrounds */
 .btn-dark{
   @include btn-dark();
   &:hover{
@@ -31,6 +38,7 @@
   }
 }
 
+/* Button white will be for white buttons present on darker backgrounds */
 .btn-light{
   @include btn-light();
   &:hover{
@@ -39,6 +47,8 @@
   }
 }
 
+
+/* Button group is a flex based class which will allow buttons to sit next to each other in a row, or convert to a column on a mobile screen */
 .btn-group{
   @include display(flex);
   @include flex-direction(column);

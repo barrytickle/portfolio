@@ -1,14 +1,19 @@
+/* Default styling towards all of the footer classes */
+
 footer{
   .footer-banner{
     background:$primaryColor;
     @include display(flex);
     @include flex-direction(column);
     @include align-items(center);
+    position: relative;
+    z-index:1;
 
     @media #{$laptop}{
       @include flex-direction(row);
     }
 
+  /*block will symbolyse one of the 50/50 elements within the footer, "Hire me" and "Contact me" */
   .block{
     padding:30px;
     @include display(flex);

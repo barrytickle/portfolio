@@ -1,3 +1,4 @@
+/* Flex class to be used when content needs to be split at a 50/50 margin */
 .flex--split{
   @include display(flex);
   @include flex-direction(column);

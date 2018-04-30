@@ -1,3 +1,7 @@
+/*
+  This stylesheet is targeted by Gulp, it tells SASS which order to import the stylesheets in.
+*/
+
 @import "main";
 @import "section";
 @import "landing";

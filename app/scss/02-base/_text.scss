@@ -1,3 +1,4 @@
+/* Default styling for text based elements within the site */
 h2{
   color:$black;
   margin-bottom:20px;
@@ -8,4 +9,9 @@ p{
   font-family:$secondaryFont;
   line-height:145%;
   font-weight:100;
+}
+
+a{
+  color:$primaryColor;
+  font-weight:400;
 }

@@ -78,9 +78,31 @@
                    });
                }
            </script>
+           <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
          <?php } ?>
           <?php if($page == '/'){ ?>
           <script>var wew = new Wew(); wew.init();</script>
         <?php } ?>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84736545-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-84736545-1');
+        </script>
+        <!-- Hotjar Tracking Code for http://www.barrytickle.com -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:613347,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>           
     </body>
 </html>

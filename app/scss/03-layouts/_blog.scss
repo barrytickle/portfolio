@@ -1,3 +1,4 @@
+/* Blog group is designed to be a flex container for all blog posts within the site. */
 .blog--group{
   @include display(flex);
   @include flex-direction(row);

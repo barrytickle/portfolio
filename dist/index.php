@@ -36,7 +36,7 @@
   </section>
   <section class="js--window column--group">
     <div class="column">
-      <h2>Photography and me</h2>
+      <h2>My Photography</h2>
       <p>Photography has always been a fantastic side hobby, where I am able to capture amazing moments within my life. In addition to just being a side hobby, I am also able to provide photography as a service, which can help personalize your user's experience by making all photos your own. </p>
       <div class="btn-group"><a href="/photography/" class="btn btn-dark">Take a look at my work.</a></div>
     </div>

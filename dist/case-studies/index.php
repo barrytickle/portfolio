@@ -8,6 +8,30 @@
         </div>
         <div class="case--study_list">
           <div class="case--study">
+            <div class="image-block" style="background-image:url('/images/portfolio/icons/portfolio.svg');"></div>
+            <div class="content-block">
+              <h2>Personal Portflio Project</h2>
+              <p>
+                This case study explains my process into developing my final initial project. The aim of my portfolio is to provide a showcase of all my ahievements and my past progress.
+              </p>
+              <div class="btn-group">
+                <a class="btn btn-dark" href="https://barrytickle.com">View Site</a>
+                <a class="btn btn-dark" href="/case-studies/portfolio/">View Case Study</a>
+              </div>
+            </div>
+          </div>
+          <div class="case--study">
+            <div class="image-block" style="background-image:url('/images/portfolio/icons/project_bazaar.svg');"></div>
+            <div class="content-block">
+              <h2>Rubyside</h2>
+              <p>Rubyside is a group of ruby on rails developers who provide events within the Liverpool area. The issue in which will be solved will be that the site is currently outdated within design. </p>
+              <div class="btn-group">
+                <a class="btn btn-dark" href="http://rubyside.barrytickle.com">View Site</a>
+                <a class="btn btn-dark" href="/case-studies/rubyside/">View Case Study</a>
+              </div>
+            </div>
+          </div>
+          <div class="case--study">
             <div class="image-block" style="background-image:url('/images/portfolio/icons/project_bazaar.svg');"></div>
             <div class="content-block">
               <h2>Project Bazaar</h2>

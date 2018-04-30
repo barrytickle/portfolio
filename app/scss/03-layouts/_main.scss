@@ -1,3 +1,8 @@
+/* this defines the styling across the site, the main container ensures that the content does not go underneath the navigation bar.
+
+the width:calc will calculate 100% of the users width minus 100% of the navigation bar. With a float right to keep all the content towards the right of the navigation bar.
+
+*/
 main{
   @media #{$tablet}{
     width:calc(100% - 100px);

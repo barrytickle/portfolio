@@ -17,7 +17,7 @@
       <div class="blog">
         <div class="thumbnail" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo the_post_thumbnail_url(); ?>');"></div><!-- The blog post thumbnail -->
         <div class="hero--image">
-          <h2><?php the_title(); ?></h2><!-- The blog post title -->
+          <h2><a style="text-decoration: none; color:inherit;" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2><!-- The blog post title -->
           <span>      <?php the_time( get_option( 'date_format' ) ); ?></span> <!-- Fixes the date not being shown on all posts -->
           <p><?php the_excerpt(); ?> </p><!-- The blog post text extract -->
           <a class="btn btn-outline" href="<?php the_permalink(); ?>">Read More</a>
