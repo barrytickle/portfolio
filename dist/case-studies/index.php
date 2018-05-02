@@ -34,11 +34,11 @@
           <div class="case--study">
             <div class="image-block" style="background-image:url('/images/portfolio/icons/project_bazaar.svg');"></div>
             <div class="content-block">
-              <h2>Project Bazaar</h2>
-              <p>Final year dissertation project submitted to Edge Hill University. All content found throughout this project has no association with the university itself. As all content throughout this case-study and the project has been written by myself.</p>
+              <h2>Currency Converter</h2>
+              <p>A currency converter which will provide the latest exchange rates and provide an outcome based on user input.</p>
               <div class="btn-group">
-                <!-- <a class="btn btn-dark" href="http://oakleyandfriends.co.uk">View Site</a> -->
-                <a class="btn btn-dark" href="/case-studies/oakley-and-friends/">View Case Study</a>
+                <a class="btn btn-dark" href="http://grooup.barrytickle.com">View Site</a> 
+                <a class="btn btn-dark" href="/case-studies/currency-converter/">View Case Study</a>
               </div>
             </div>
           </div>
